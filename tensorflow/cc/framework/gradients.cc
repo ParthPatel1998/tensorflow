@@ -16,6 +16,7 @@ limitations under the License.
 #include <deque>
 #include <vector>
 
+
 #include "tensorflow/cc/framework/gradients.h"
 #include "tensorflow/cc/framework/grad_op_registry.h"
 #include "tensorflow/cc/ops/standard_ops.h"
@@ -30,7 +31,7 @@ limitations under the License.
 
 namespace tensorflow {
 namespace {
-
+    
 struct OutputHash {
   uint64 operator()(const Output& x) const {
     return x.hash();
